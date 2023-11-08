@@ -1,0 +1,6 @@
+#bannerButton {
+    background-color: rgb(2, 120, 138);
+}
+#bannerButton:hover {
+    background-color: rgb(2, 86, 98);
+}

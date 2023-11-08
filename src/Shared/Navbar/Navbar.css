@@ -1,0 +1,11 @@
+nav a.active{
+    background-color: #001F2B;
+    padding: 3px 20px;
+    border-radius: 25px;
+}
+.navItem{
+    background-color: rgb(1, 89, 105);
+    padding: 10px;
+    border-radius: 25px;
+    
+}
