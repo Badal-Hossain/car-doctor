@@ -38,7 +38,7 @@ const Banner = () => {
                             <h1 data-aos ="zoom-out-left" data-aos-duration="1500" className='text-white mb-6 text-6xl font-semibold'>Affordable Price! <br /> For Your Car Servicing</h1>
                             <br />
                             <div data-aos="zoom-in-right" data-aos-duration="2000">
-                                <NavLink className="btn px-8 text-md outline-none border-none text-center text-white transition duration-300 rounded-lg" id='bannerButton'>Explore more</NavLink>
+                                <NavLink to='/login' className="btn px-8 text-md outline-none border-none text-center text-white transition duration-300 rounded-lg" id='bannerButton'>Explore more</NavLink>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const Banner = () => {
                             <h1 data-aos ="zoom-out-left" data-aos-duration="1500" className='text-white mb-6 text-6xl font-semibold'>Affordable Price! <br /> For Your Car Servicing</h1>
                             <br />
                             <div data-aos="zoom-in-right" data-aos-duration="2000">
-                                <NavLink className="btn px-8 text-md outline-none border-none text-center text-white transition duration-300 rounded-lg" id='bannerButton'>Explore more</NavLink>
+                                <NavLink to='/login' className="btn px-8 text-md outline-none border-none text-center text-white transition duration-300 rounded-lg" id='bannerButton'>Explore more</NavLink>
                             </div>
                         </div>
                     </div>                   
@@ -70,7 +70,7 @@ const Banner = () => {
                             <h1 data-aos ="zoom-out-left" data-aos-duration="1500" className='text-white mb-6 text-6xl font-semibold'>Affordable Price! <br /> For Your Car Servicing</h1>
                             <br />
                             <div data-aos="zoom-in-right" data-aos-duration="2000">
-                                <NavLink className="btn px-8 text-md outline-none border-none text-center text-white transition duration-300 rounded-lg" id='bannerButton'>Explore more</NavLink>
+                                <NavLink to='/login' className="btn px-8 text-md outline-none border-none text-center text-white transition duration-300 rounded-lg" id='bannerButton'>Explore more</NavLink>
                             </div>
                         </div>
                     </div>                   
@@ -86,7 +86,7 @@ const Banner = () => {
                             <h1 data-aos ="zoom-out-left" data-aos-duration="1500" className='text-white mb-6 text-6xl font-semibold'>Affordable Price! <br /> For Your Car Servicing</h1>
                             <br />
                             <div data-aos="zoom-in-right" data-aos-duration="2000">
-                                <NavLink className="btn px-8 text-md outline-none border-none text-center text-white transition duration-300 rounded-lg" id='bannerButton'>Explore more</NavLink>
+                                <NavLink to='/login' className="btn px-8 text-md outline-none border-none text-center text-white transition duration-300 rounded-lg" id='bannerButton'>Explore more</NavLink>
                             </div>
                         </div>
                     </div>

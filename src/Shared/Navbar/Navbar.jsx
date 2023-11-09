@@ -10,6 +10,7 @@ const Navbar = () => {
             <NavLink to='/services'>Services</NavLink>
             <NavLink to='/blog'>Blog</NavLink>
             <NavLink to='/contact'>Contact</NavLink>
+            <NavLink to='/login'>Log in</NavLink>
         </nav>
     </>
   return (
@@ -84,7 +85,7 @@ const Navbar = () => {
             />
           </svg>
         </button>
-        <button className="btn btn-outline btn-info">Appointment</button>
+        <NavLink to='/signup' className="btn btn-outline btn-info">Appointment</NavLink>
       </div>
     </div>
   );
