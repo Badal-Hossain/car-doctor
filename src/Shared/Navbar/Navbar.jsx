@@ -4,7 +4,7 @@ import './Navbar.css'
 
 const Navbar = () => {
     const links = <>
-        <nav className="navItem text-lg gap-8 flex">
+        <nav className="navItem text-lg gap-8 flex text-white">
             <NavLink to='/'>Home</NavLink>
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/services'>Services</NavLink>
