@@ -1,18 +1,30 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import Navbar from "../../Shared/Navbar/Navbar";
 import loginImage from './../../assets/assets/images/login/login.svg'
 import { FcGoogle } from "react-icons/fc";
 import { BsGithub } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import Footer from "../../Shared/Footer/Footer";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Login = () => {
+    const {signIn} = useContext(AuthContext)
     const handleLogin = e => {
         e.preventDefault()
         const form = e.target;
         const email = form.email.value;
-        const password = form.password.value
+        const password = form.password.value;
         console.log(form, email, password);
+
+        signIn(email, password) 
+        .then(result => {
+            const user = result.user
+            console.log(user);
+        })
+        .catch(error => {
+            console.log(error.message);
+        })
     }
     return (
         <div>
@@ -42,7 +54,7 @@ const Login = () => {
                         <button><BsGithub></BsGithub></button>                             
                     </div>
                     <div className="flex justify-center">
-                        <p>Don't have an account?</p>
+                        <p>New to car doctor?</p>
                         <NavLink to='/signup' className="text-red-500 font-bold ml-2">Sign Up</NavLink>
                     </div>
                 </div>

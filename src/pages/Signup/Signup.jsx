@@ -2,14 +2,33 @@
 
 import { NavLink } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
-import signupImage from './../../assets/assets/images/login/login.svg'
+import signupImage from './../../assets/assets/images/login/login.svg';
 import { FcGoogle } from "react-icons/fc";
 import { BsGithub } from "react-icons/bs";
 import Footer from "../../Shared/Footer/Footer";
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const Signup = () => {
+    const {createUser} = useContext(AuthContext)
     const handleSignup = e => {
         e.preventDefault()
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(form, email, password);
+
+        createUser(email, password)
+        .then((result) => {
+            const user = result.user
+            console.log(user);
+        })
+        .catch((error)=>{
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+        })
     }
     return (
         <div>

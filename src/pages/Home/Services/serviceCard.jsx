@@ -14,8 +14,8 @@ const ServiceCard = ({service}) => {
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <div className="flex">
-        <p className="text-red-500">Price : ${price}</p>
-        <button className="text-2xl text-red-500"><BsArrowRight></BsArrowRight></button>
+        <p style={{color:'#01A5C0'}} >Price : ${price}</p>
+        <button style={{color:'#01A5C0'}} className="text-2xl text-info"><BsArrowRight></BsArrowRight></button>
         </div>
       </div>
     </div>
