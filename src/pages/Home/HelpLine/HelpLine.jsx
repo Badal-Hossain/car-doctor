@@ -3,7 +3,7 @@ import { MdAddIcCall, MdAddLocationAlt } from "react-icons/md";
 const HelpLine = () => {
     return (
         <div>
-            <div className= "bg-black h-48 my-16 grid grid-cols-3 ">
+            <div className= "bg-black h-48 my-16 grid grid-cols-3 text-white">
                 <div className="col-span-1 flex mx-auto items-center">
                     <TbCalendarTime className="text-4xl items-center"></TbCalendarTime>
                     <div className="ml-3">
