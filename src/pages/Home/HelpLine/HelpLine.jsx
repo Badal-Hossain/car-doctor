@@ -4,21 +4,21 @@ const HelpLine = () => {
     return (
         <div>
             <div className= "bg-black h-48 my-16 grid grid-cols-3 text-white">
-                <div className="col-span-1 flex mx-auto items-center">
+                <div className="col-span-1 flex mx-auto items-center animate-pulse">
                     <TbCalendarTime className="text-4xl items-center"></TbCalendarTime>
                     <div className="ml-3">
                         <h5>we are open Monday-Friday</h5>
                         <p className="text-xl font-bold">7:00am - 9:00pm</p>
                     </div>
                 </div>
-                <div className="col-span-1 flex mx-auto items-center">
+                <div className="col-span-1 flex mx-auto items-center animate-pulse">
                     <MdAddIcCall className="text-4xl items-center"></MdAddIcCall>
                     <div className="ml-3">
                         <h5>Have a question?</h5>
                         <p className="text-xl font-bold">+2546 251 2658</p>
                     </div>
                 </div>
-                <div className="col-span-1 flex mx-auto items-center">
+                <div className="col-span-1 flex mx-auto items-center animate-pulse">
                     <MdAddLocationAlt className="text-4xl items-center"></MdAddLocationAlt>
                     <div className="ml-3">
                         <h5>Need a repair? our address</h5>

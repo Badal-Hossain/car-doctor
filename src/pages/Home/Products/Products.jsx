@@ -1,4 +1,10 @@
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const Products = () => {
+    useEffect(()=> {
+        Aos.init();
+      },[])
     return (
         <div className="mx-auto text-center">
             <h5 className="font-bold text-red-500">Popular Products</h5>
@@ -6,7 +12,7 @@ const Products = () => {
             <p className="w-1/2 text-center mx-auto mb-8">the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
             <div>
                 <div className="grid grid-cols-3 px-10 lg:ml-20">
-                    <div className="col-span-1">
+                    <div className="col-span-1" data-aos="fade-down-right" data-aos-duration="1500">
                         <div className="card card-compact w-72 bg-base-100 shadow-xl">
                             <figure><img src="../../../../public/assets/images/services/6.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
@@ -22,7 +28,7 @@ const Products = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-1 mb-6">
+                    <div className="col-span-1 mb-6" data-aos="fade-down" data-aos-duration="1500">
                         <div className="card card-compact w-72 bg-base-100 shadow-xl">
                             <figure><img src="../../../../public/assets/images/services/2.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
@@ -38,7 +44,7 @@ const Products = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-down-left" data-aos-duration="1500">
                         <div className="card card-compact w-72 bg-base-100 shadow-xl">
                             <figure><img src="../../../../public/assets/images/services/5.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
@@ -56,7 +62,7 @@ const Products = () => {
                     </div>
                 </div>
                 <div className="grid grid-cols-3 px-10 lg:ml-20">
-                    <div className="col-span-1">
+                    <div className="col-span-1" data-aos="fade-up-right" data-aos-duration="1500">
                         <div className="card card-compact w-72 bg-base-100 shadow-xl">
                             <figure><img src="../../../../public/assets/images/services/4.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
@@ -72,7 +78,7 @@ const Products = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-1">
+                    <div className="col-span-1" data-aos="fade-up" data-aos-duration="1500">
                         <div className="card card-compact w-72 bg-base-100 shadow-xl">
                             <figure><img src="../../../../public/assets/images/services/3.jpg" alt="Shoes" /></figure>
                             <div className="card-body">
@@ -88,7 +94,7 @@ const Products = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div data-aos="fade-up-left" data-aos-duration="1500">
                         <div className="card card-compact w-72 bg-base-100 shadow-xl">
                             <figure><img src="../../../../public/assets/images/services/1.jpg" alt="Shoes" /></figure>
                             <div className="card-body">

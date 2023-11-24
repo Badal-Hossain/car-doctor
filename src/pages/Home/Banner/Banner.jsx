@@ -27,6 +27,7 @@ const Banner = () => {
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
+                className="mySwiper"
                 >
                 {/* slider-1 */}
                 <SwiperSlide>
